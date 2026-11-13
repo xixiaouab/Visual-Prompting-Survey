@@ -2,9 +2,11 @@
 
 # Awesome Prompting on Vision-Language Models
 
+> This repository is a fork of [JindongGu/Awesome-Prompting-on-Vision-Language-Model](https://github.com/JindongGu/Awesome-Prompting-on-Vision-Language-Model). The survey citation, taxonomy, figures, and contact information below originate from the upstream survey by Gu et al. (2023).
+
 <img src="./assets/pvlm-mindmap.png" width="100%" height="100%">
 
-## # :nerd_face: What is Prompting on Vision-Language Models?
+## :nerd_face: What is Prompting on Vision-Language Models?
 Prompt engineering is a technique that involves augmenting a large pre-trained model with task-specific hints, known as prompts, to adapt the model to new tasks. This repo aims to provide **a comprehensive survey** of cutting-edge research in prompt engineering on **three** types of vision-language models (VLMs): **multimodal-to-text generation models** (*e.g.*, Flamingo), **image-text matching models** (*e.g.*, CLIP), and **text-to-image generation models** (*e.g.*, Stable Diffusion) (Fig. 1).
 
 <img src="./assets/3-models.png">
@@ -21,7 +23,7 @@ If you find our paper and repo helpful to your research, please cite the followi
 ```latex
 @article{gu2023survey,
   title={A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models},
-  author={Gu, Jindong and Han, Zhen and Chen, Shuo, and Beirami, Ahmad and He, Bailan and Zhang, Gengyuan and Liao, Ruotong and Qin, Yao and Tresp, Volker and Torr, Philip}
+  author={Gu, Jindong and Han, Zhen and Chen, Shuo and Beirami, Ahmad and He, Bailan and Zhang, Gengyuan and Liao, Ruotong and Qin, Yao and Tresp, Volker and Torr, Philip},
   journal={arXiv preprint arXiv:2307.12980},
   year={2023}
 }
@@ -29,9 +31,9 @@ If you find our paper and repo helpful to your research, please cite the followi
 
 
 
-## # :paperclips: Awesome Papers
+## :paperclips: Awesome Papers
 
-- [Prompting Model in Multimodal-to-Text Generation](#prompting-model-in-multimodal-to-text-generation-eg-on-flamingo)
+- [Prompting Model in Multimodal-to-Text Generation](#prompting-models-in-multimodal-to-text-generation-eg-on-flamingo)
 - [Prompting Model in Image-Text Matching](#prompting-model-in-image-text-matching-eg-on-clip)
 
 - [Prompting Model in Text-to-Image Generation](#prompting-model-in-text-to-image-generation-eg-on-stable-diffusion)
@@ -65,7 +67,7 @@ There are two main types of fusion module approaches based on the integration of
 | [Unified Demonstration Retriever for In-Context Learning](https://arxiv.org/abs/2305.04320) | ACL         | 2023 | [Github](https://github.com/KaiLv69/UDR)                     | Retrieval-based prompting                            |
 | [Compositional Exemplars for In-context Learning](https://arxiv.org/abs/2302.05698) | ICML        | 2023 | [Github](https://github.com/HKUNLP/icl-ceil)                 | Retrieval-based prompting                            |
 | [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) | NeurIPS     | 2022 | ---                                                          | Chain-of-thought prompting                           |
-| [Automatic Chain of Thought Prompting in Large Language Models]() | ICLR        | 2023 | [Github](https://github.com/amazon-research/auto-cot)        | Chain-of-thought prompting                           |
+| Automatic Chain of Thought Prompting in Large Language Models | ICLR        | 2023 | [Github](https://github.com/amazon-research/auto-cot)        | Chain-of-thought prompting                           |
 | [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691) | EMNLP       | 2021 | ---                                                          | Prompt tuning                                        |
 | [Learning How to Ask: Querying LMs with Mixtures of Soft Prompts](https://arxiv.org/abs/2104.06599) | NAACL-HLT   | 2021 | [Github](https://github.com/hiaoxui/soft-prompts)            | Prompt tuning                                        |
 | [Prefix-Tuning: Optimizing Continuous Prompts for Generation](https://arxiv.org/abs/2101.00190) | ACL         | 2021 | [Github](https://github.com/XiangLi1999/PrefixTuning)        | Prefix tuning                                        |
@@ -142,10 +144,10 @@ Depending on the target of prompting, existing methods can be classified into th
 | [DenseCLIP: Language-Guided Dense Prediction with Context-Aware Prompting](https://arxiv.org/abs/2112.01518) | CVPR          | 2022 | [Github](https://github.com/raoyongming/DenseCLIP)           | Class-conditioned text prompts for semantic segmentation     |
 | [Segment Anything](https://arxiv.org/abs/2304.02643)         | ICCV          | 2023 | [Github](https://segment-anything.com/)                      | Promptable queries for semantic segmentation                 |
 | [Domain Adaptation via Prompt Learning](https://arxiv.org/abs/2202.06687) | IEEE         | 2023 | [Github](https://github.com/LeapLabTHU/DAPrompt)             | Domain-specific textual prompts for domain adaptation        |
-| [Visual Prompt Tuning for Test-time Domain Adaptation]()     | arXiv         | 2022 | ---                                                          | Prompts for domain adaptation                                |
+| Visual Prompt Tuning for Test-time Domain Adaptation     | arXiv         | 2022 | ---                                                          | Prompts for domain adaptation                                |
 | [Learning to Prompt for Continual Learning](https://arxiv.org/abs/2112.08654) | CVPR          | 2022 | [Github](https://github.com/google-research/l2p)             | Prompts for continual learning                               |
 | [DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning](https://arxiv.org/abs/2204.04799) | ECCV          | 2022 | [Github](https://github.com/google-research/l2p)             | Prompts for continual learning                               |
-| [Prompt Vision Transformer for Domain Generalization]()      | arXiv         | 2022 | [Github](https://github.com/zhengzangw/DoPrompt)             | Prompts for domain generalization                            |
+| Prompt Vision Transformer for Domain Generalization      | arXiv         | 2022 | [Github](https://github.com/zhengzangw/DoPrompt)             | Prompts for domain generalization                            |
 | [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | LCLR         | 2022 | [Github](https://github.com/cvlab-columbia/ZSRobust4FoundationModel) | Visual prompt tuning under adversarial attack                |
 | [Visual Prompting for Adversarial Robustness](https://arxiv.org/abs/2210.06284) | ICASSP        | 2023 | [Github](https://github.com/Phoveran/vp-for-adversarial-robustness) | Visual prompting to improve the adversarial robustness       |
 | [Exploring the Universal Vulnerability of Prompt-based Learning Paradigm](https://arxiv.org/abs/2204.05239) | NAACL         | 2022 | [Github](https://github.com/leix28/prompt-universal-vulnerability) | Visual prompting vulnerability                               |
@@ -159,7 +161,6 @@ Depending on the target of prompting, existing methods can be classified into th
 ## Prompting Model in Text-to-Image Generation (*e.g.* on Stable Diffusion)
 | Title                                                        | Venue            | Year | Code if available                                            | Comment                                                      |
 | ------------------------------------------------------------ | ---------------- | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/abs/2105.05233) | NeurIPS          | 2021 | [Github](https://github.com/openai/guided-diffusion)         | Diffusion models on image generation                         |
 | [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/abs/2105.05233) | NeurIPS          | 2021 | [Github](https://github.com/openai/guided-diffusion)         | Diffusion models on image generation                         |
 | [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) | NeurIPS          | 2020 | [Github](https://github.com/hojonathanho/diffusion)          | Diffusion models on image generation                         |
 | [SuS-X: Training-Free Name-Only Transfer of Vision-Language Models](https://arxiv.org/pdf/2211.16198.pdf) | ICCV             | 2023 | [Github](https://github.com/vishaal27/sus-X/)                | Diffusion models on image generation                         |
@@ -186,7 +187,7 @@ Depending on the target of prompting, existing methods can be classified into th
 | [Dream3D: Zero-Shot Text-to-3D Synthesis Using 3D Shape Prior and Text-to-Image Diffusion Models](https://arxiv.org/abs/2212.14704) | CVPR             | 2023 | [Page](https://bluestyle97.github.io/dream3d/)               | Prompts for text-to-3D generation                            |
 | [MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model](https://arxiv.org/pdf/2208.15001.pdf) | IEEE            | 2024 | [Page](https://mingyuan-zhang.github.io/projects/MotionDiffuse.html) | Prompts for text-to-motion generation                        |
 | [FLAME: Free-form Language-based Motion Synthesis & Editing](https://arxiv.org/abs/2209.00349) | AAAI             | 2023 | [Github](https://github.com/kakaobrain/flame)                | Prompts for text-to-motion generation                        |
-| [MDM: Human Motion Diffusion Model]()                        | ICLR             | 2023 | [Github](https://github.com/GuyTevet/motion-diffusion-model) | Prompts for text-to-motion generation                        |
+| MDM: Human Motion Diffusion Model                        | ICLR             | 2023 | [Github](https://github.com/GuyTevet/motion-diffusion-model) | Prompts for text-to-motion generation                        |
 | [Zero-shot Generation of Coherent Storybook from Plain Text Story using Diffusion Models](https://arxiv.org/abs/2302.03900) | arXiv            | 2023 | ---                                                          | Prompts for complex tasks                                    |
 | [Multimodal Procedural Planning via Dual Text-Image Prompting](https://arxiv.org/abs/2305.01795) | ICLR            | 2024 | [Github](https://github.com/YujieLu10/MPP)                   | Prompts for complex tasks                                    |
 | [Prompt Stealing Attacks Against Text-to-Image Generation Models](https://arxiv.org/abs/2302.09923) | USENIX Security Symposium            | 2023 | ---                                                          | Prompts for responsible AI                                   |
@@ -198,17 +199,18 @@ Depending on the target of prompting, existing methods can be classified into th
 | [T2IAT: Measuring Valence and Stereotypical Biases in Text-to-Image Generation](https://arxiv.org/abs/2306.00905) | ACL              | 2023 | ---                                                          | Prompts on text-to-image models considering biases           |
 | [Stable Bias: Analyzing Societal Representations in Diffusion Models](https://arxiv.org/abs/2303.11408) | NeurIPS            | 2023 | ---                                                          | Prompts on text-to-image models considering biases           |
 | [A Pilot Study of Query-Free Adversarial Attack Against Stable Diffusion](https://openaccess.thecvf.com/content/CVPR2023W/AML/papers/Zhuang_A_Pilot_Study_of_Query-Free_Adversarial_Attack_Against_Stable_Diffusion_CVPRW_2023_paper.pdf) | CVPR             | 2023 | ---                                                          | Adversarial robustness of text-to-image models               |
-| [Diffusion Models for Imperceptible and Transferable Adversarial Attack]() | ICLR            | 2024 | [Github](https://github.com/WindVChen/DiffAttack)            | Adversarial robustness of text-to-image models               |
+| Diffusion Models for Imperceptible and Transferable Adversarial Attack | ICLR            | 2024 | [Github](https://github.com/WindVChen/DiffAttack)            | Adversarial robustness of text-to-image models               |
 | [Diffusion Models for Adversarial Purification](https://arxiv.org/abs/2205.07460) | ICML             | 2022 | [Github](https://github.com/NVlabs/DiffPure)                 | Adversarial robustness of text-to-image models               |
 | [Rickrolling the Artist: Injecting Backdoors into Text Encoders for Text-to-Image Synthesis](https://arxiv.org/abs/2211.02408) | ICCV            | 2023 | ---                                                          | Backdoor attack on text-to-image models                      |
 | [Text-to-Image Diffusion Models can be Easily Backdoored through Multimodal Data Poisoning](https://arxiv.org/abs/2305.04175) | ACM MM            | 2023 | ---                                                          | Backdoor attack on text-to-image models                      |
 | [Personalization as a Shortcut for Few-Shot Backdoor Attack against Text-to-Image Diffusion Models](https://arxiv.org/abs/2305.10701) | AAAI           | 2024 | ---                                                          | Backdoor attack on text-to-image models                      |
 
 
-## # :mailbox_with_mail: Contact 
+## :mailbox_with_mail: Contact 
 
 Please contact us (jindong.gu@outlook.com, chenshuo.cs@outlook.com) if 
 - you would like to add your papers in this repo,
 - you find any mistakes in this repo, 
 - you have any suggestions for this repo. 
+
 
